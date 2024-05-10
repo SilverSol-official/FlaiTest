@@ -1,0 +1,82 @@
+.App {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.mainBodyContainer {
+  border: solid black 1px;
+  width: 950px;
+  height: 2000px;
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  background: #0d0d0e;
+}
+
+.rightBarContainer {
+  border: solid black 1px;
+  width: 360px;
+  height: 860px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #d1fd0a;
+  border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 9px;
+  width: 5px;
+  margin-top: -2px;
+  background: #d1fd0a;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #d1fd0a;
+}
